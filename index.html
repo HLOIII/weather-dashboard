@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -14,28 +15,26 @@
 <body>
     <!-- header -->
     <header>
-        <h1 class="text-center">Weather Dashboard</h1>
+        <h1 class="display-5 text-center">Weather Dashboard</h1>
     </header>
     <!-- container to hold two columns -->
-    <main class="container" id="container">
+    <main class="container-fluid" id="container">
         <div class="row">
             <!-- search box and results column -->
             <div class="col-4">
-                <!-- search form -->
-                <form id="user-search" class="form-inline">
-                    <label class="form-label" for="search">Search for a City: </label>
-                    <input name="search" id="search" type="text" autofocus="true" class="form-input" />
-                    <button type="submit" class="btn" id="searchIcon"><i class="fa fa-search"
-                            aria-hidden="true"></i></button>
-                </form>
+                <!-- search  -->
+                <h3>Search for a city:</h3>
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" id="citySearch" />
+                    <button class="btn btn-outline-primary fa fa-search" type="submit" id="searchBtn"></button>
+                </div>
+                <!-- List of searched cities -->
+                <div class="list-group" id="cityList"></div>
             </div>
-            <!-- List of searched cities -->
-            <!-- <div class="list-group" id="city-list">
-        </div> -->
-            <!-- weather forcast column -->
-            <div class="col-8" id="weather-container">
-                <h2 class="subtitle" id="city-search-term"><span id="date"></span></h2>
-                <div id="weather-info-container" class="list-group"></div>
+            <!-- Weather Information -->
+            <div class="col-8" id="weatherInfo">
+                <div class="card" style="width: 100%;" id="weatherForecast"></div>
+                <div id="fiveDayForecast"></div>
             </div>
         </div>
     </main>
