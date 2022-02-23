@@ -36,7 +36,7 @@ var formSubmitHandler = function (event) {
     var getWeatherInfo = function (city) {
         // format the weather api url
         API_key = '0de5695b3a983be4cbc0966b74760673'
-        apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`
+        apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}&units=imperial`
 
         // make a request to the url
         fetch(apiUrl)

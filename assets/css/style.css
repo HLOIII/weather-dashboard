@@ -9,7 +9,7 @@ header h1 {
 }
 
 
-#searchBtn {
+.btn {
     background-color: rgb(0, 183, 255);
     color: white;
 }
