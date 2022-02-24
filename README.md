@@ -27,3 +27,5 @@ Build a weather dashboard that will run in the browser and feature dynamically u
   # Link to Website
 https://hloiii.github.io/weather-dashboard/
 
+![screenshot](assets/images/Capture.PNG)
+
