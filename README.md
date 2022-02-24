@@ -21,5 +21,9 @@ SO THAT I can plan a trip accordingly
 # My Task
 Build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
- # Resources I used 
+# Resources I used 
  I mostly used the information I was given from my class and I used "MDN Web Docs","W3schools", Google, Youtube.
+
+  # Link to Website
+https://hloiii.github.io/weather-dashboard/
+
