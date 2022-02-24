@@ -82,9 +82,11 @@ var CityNameSaved = function (city) {
         }
         cityArray.unshift(city);
     }
-    localStorage.setItem("weatherInfo", JSON.stringify(cityArray));
-    newSearch = 1;
-    return newSearch;
+    if (city) {
+        localStorage.setItem("weatherInfo", JSON.stringify(cityArray));
+        newSearch = 1;
+        return newSearch;
+    }
 };
 
 // display searched cities
